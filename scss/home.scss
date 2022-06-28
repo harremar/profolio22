@@ -4,8 +4,8 @@
     // background-color: green;
     padding-top: 140px;
     .home-content{
-        width: 950px;
-        height: 500px;
+        width: 80%;
+        max-height: 500px;
         // background-color: green;
         margin: 0 auto;
         h6{
@@ -26,7 +26,7 @@
             font-size: 56px;
         }
         p{
-            width: 600px;
+            max-width: 600px;
             color: $site-lightpurple;
             font-family: openR;
             font-size: 20px;
@@ -57,3 +57,102 @@
         }
     }
 }
+
+@media (max-width: 1050px) {
+#home{
+    // background-color: red;
+    .home-content{
+        // background-color: blue;
+        text-align: center;
+        h6{
+            font-size: 18px;
+        }
+        h1{
+            font-size: 60px;
+        }
+        h2{
+            font-size: 48px;
+        }
+        p{
+            font-size: 18px;
+            margin: 0 auto;
+        }
+        a{
+            margin: 0 auto;
+            text-align: center;
+            .btn-checkout{
+                
+                margin: 0 auto;
+                margin-top: 30px;
+               h3{} 
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 820px) {
+    #home{
+        // background-color: red;
+        .home-content{
+            // background-color: blue;
+            text-align: center;
+            h6{
+                font-size: 12px;
+            }
+            h1{
+                font-size: 48px;
+            }
+            h2{
+                font-size: 32px;
+            }
+            p{
+                font-size: 12px;
+                margin: 0 auto;
+                max-width: 500px;
+                // background-color: pink;
+            }
+            a{
+                margin: 0 auto;
+                text-align: center;
+                .btn-checkout{
+                    
+                    margin: 0 auto;
+                    margin-top: 30px;
+                   h3{} 
+                }
+            }
+        }
+    }
+    }
+    @media (max-width: 450px) {
+        #home{
+            // background-color: red;
+            margin: 0 auto;
+            height: 420px;
+            .home-content{
+                // background-color: blue;
+                max-height: 400px;
+                h6{
+                    // background-color: fuchsia;
+                }
+                h1{ 
+                    // background-color: darkcyan;
+                    font-size: 30px;
+                }
+                h2{
+                    // background-color: brown;
+                    font-size: 22px;
+                    margin-top: 5px;
+                }
+                p{}
+                a{
+                    // background-color: violet;
+                    .btn-checkout{
+
+                    }
+                }
+            }
+        }
+    }
+

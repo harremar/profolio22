@@ -1,25 +1,16 @@
 #experience{
     width: 100%;
-    height: 135vh;
+    min-height: 135vh;
     padding-top: 100px;
     // background-color: blue;
     
     .experience-content{
-    width: 950px;
-    height: 900px;
+    max-width: 950px;
+    min-height: 900px;
     margin: 0 auto;
     // background-color: red;
-    h6{
-        font-size: 30px;
-        color: white;
-        font-family: openR;
-        span{
-            font-size: 20px;
-            color: $site-darkpink;
-        }
-    }
         .job-container{
-            width: 100%;
+            max-width: 100%;
             min-height: 250px;
             // background-color: bisque;
             margin-top: 0;
@@ -30,10 +21,19 @@
             
             
             .job-info{
-            width: 50%;
+            max-width: 50%;
             min-height: 250px;
             padding-left: 10px;
             // background-color: pink;
+            h1{
+                font-size: 30px;
+                color: white;
+                font-family: openR;
+                span{
+                    font-size: 20px;
+                    color: $site-darkpink;
+                }
+            }
                 h3{
                     font-size: 24px;
                     color: $site-darkpink;
@@ -52,7 +52,7 @@
                 }
             }
             .job-pic{
-                width: 50%;
+                max-width: 50%;
                 height: 300px;
                 // background-color: mediumturquoise;
                 position: relative;
@@ -109,5 +109,151 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 1000px) {
+    #experience{
+        // background-color: red ;
+        .job-container{
+            flex-direction: column;
+            // background-color: rebeccapurple;
+            
+            .job-info{
+                min-width: 500px;
+                min-height: 300px;
+                padding-left: 0px;
+                
+            }
+            .job-pic{
+                width: 320px;
+                // background-color: red;
+                img{
+                    top: 0;
+                    right: 0;
+                }
+                .pinkcircle{
+                    bottom: 0;
+                    left: 0;
+                    
+                }
+                .pinkcircle2{
+                    display: none;
+                }
+            }
+        }
+        a{
+            margin: 0 auto;
+            text-align: center;
+            // background-color: red;
+            .btn-resume{
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 35px;
+                width: 200px;
+                height: 60px;
+                border: solid white 2px;
+                color: white;
+                border-radius: 5px;
+                transition: 0.3s;
+                
+                h3{
+                    font-family: openL;
+                    font-size: 16px;
+                    text-align: center;
+                    padding-top: 15px;
+                }
+            }
+            .btn-resume:hover{
+                border: solid $site-darkpink 2px;
+                color: $site-darkpink;
+                cursor: pointer;
+            }
+        }
+    }
+    }
+
+    @media (max-width: 650px) {
+        #experience{
+            // background-color: red ;
+            .job-container{
+                flex-direction: column;
+                // background-color: rebeccapurple;
+                
+                .job-info{
+                    // background-color: blue;
+                    min-width: 360px;
+                    h1{
+                        font-size: 24px;
+                        span{
+                            font-size: 20px;
+                        }
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+
+                    
+                }
+                .job-pic{
+                    width: 320px;
+                    // background-color: red;
+                    img{
+                        top: 0;
+                        right: 0;
+                    }
+                    .pinkcircle{
+                        bottom: 0;
+                        left: 0;
+                        
+                    }
+                    .pinkcircle2{
+                        display: none;
+                    }
+                }
+            }
+            a{
+                margin: 0 auto;
+                text-align: center;
+                // background-color: red;
+                .btn-resume{
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 35px;
+                    width: 200px;
+                    height: 60px;
+                    border: solid white 2px;
+                    color: white;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    
+                    h3{
+                        font-family: openL;
+                        font-size: 16px;
+                        text-align: center;
+                        padding-top: 15px;
+                    }
+                }
+                .btn-resume:hover{
+                    border: solid $site-darkpink 2px;
+                    color: $site-darkpink;
+                    cursor: pointer;
+                }
+            }
+        }
+        }
+@media (max-width: 450px) {
+    #experience{
+        .experience-content{
+            .job-container{
+                .job-info{
+                    padding: 20px;
+                    // background-color: black;
+                    h1{
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }

@@ -15,9 +15,17 @@ nav {
             text-decoration: none;
             transition: 0.3s; 
             font-size: 34px;
-            img{
-                width: 58px;
+            .logopic{
+                width: 62px;
                 height: 40px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(../images/mh2.png);
+
+            }
+            .logopic:hover{
+                background-image: url(../images/mh.png);
             }
         }
     }
@@ -44,4 +52,39 @@ nav {
         }
     }
 
+}
+
+
+@media (max-width: 650px) {
+    nav{
+        // background-color: black;
+        display: block;
+        height: 100px;
+        padding: 10px;
+        padding-top: 20px;
+        .logo{
+            margin: 5px auto;
+            width: 60px;
+            height: 40px;
+            justify-content: center;
+            a{
+                .logopic{
+                    width: 40px;
+                    height: 25px;
+                }
+            }
+        }
+        .links{
+            max-width: 340px;
+            // background-color: red;
+            margin: 0 auto;
+            text-align: center;
+            a{
+                font-size: 12px;
+                span{
+                    // display: none;
+                }
+            }
+        }
+    }
 }

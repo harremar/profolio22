@@ -19,3 +19,18 @@
         }
     }
 }
+
+@media (max-width: 650px) {
+    .nav-socials{
+        // background-color: red;
+        left: 5px;
+        bottom: 10px;
+        height: 160px;
+        .social{
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            // background-color: pink;
+        }
+    }
+    }
