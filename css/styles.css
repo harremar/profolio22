@@ -1,0 +1,642 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #4B4952;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: openB;
+  src: url(fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: openBI;
+  src: url(fonts/OpenSans-BoldItalic.ttf);
+}
+@font-face {
+  font-family: openR;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: openI;
+  src: url(fonts/OpenSans-Italic.ttf);
+}
+@font-face {
+  font-family: openL;
+  src: url(fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: openLI;
+  src: url(fonts/OpenSans-LightItalic.ttf);
+}
+nav {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 50px;
+  position: fixed;
+  z-index: 1;
+}
+nav .logo a {
+  color: white;
+  font-family: candara;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 34px;
+}
+nav .logo a img {
+  width: 58px;
+  height: 40px;
+}
+nav .links {
+  width: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links a {
+  color: white;
+  font-family: openL;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav .links a span {
+  color: rgb(200, 173, 183);
+  font-size: 12px;
+}
+nav .links a:hover {
+  color: rgb(200, 173, 183);
+  cursor: pointer;
+}
+
+.nav-socials {
+  width: 60px;
+  height: 240px;
+  position: fixed;
+  bottom: 80px;
+  left: 50px;
+}
+.nav-socials .social {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.nav-socials .social:hover {
+  cursor: pointer;
+}
+.nav-socials .social:hover img {
+  width: 35px;
+  height: 35px;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  padding-top: 140px;
+}
+#home .home-content {
+  width: 950px;
+  height: 500px;
+  margin: 0 auto;
+}
+#home .home-content h6 {
+  font-family: openL;
+  color: rgb(200, 173, 183);
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#home .home-content h1 {
+  font-family: openB;
+  color: white;
+  font-size: 72px;
+  margin-bottom: -10px;
+}
+#home .home-content h2 {
+  font-family: openB;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 56px;
+}
+#home .home-content p {
+  width: 600px;
+  color: #79717A;
+  font-family: openR;
+  font-size: 20px;
+}
+#home .home-content a {
+  text-decoration: none;
+}
+#home .home-content a .btn-checkout {
+  margin-top: 35px;
+  width: 200px;
+  height: 60px;
+  border: solid white 2px;
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#home .home-content a .btn-checkout h3 {
+  font-family: openL;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+#home .home-content a .btn-checkout:hover {
+  border: solid rgb(200, 173, 183) 2px;
+  color: rgb(200, 173, 183);
+  cursor: pointer;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+#about .about-content {
+  width: 950px;
+  height: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#about .about-content .about-info {
+  width: 50%;
+  height: 500px;
+  padding-left: 10px;
+}
+#about .about-content .about-info h6 {
+  font-size: 30px;
+  color: white;
+  font-family: openR;
+}
+#about .about-content .about-info h6 span {
+  font-size: 20px;
+  color: rgb(200, 173, 183);
+}
+#about .about-content .about-info p {
+  font-size: 18px;
+  color: white;
+  font-family: openL;
+}
+#about .about-content .about-pic {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+#about .about-content .about-pic .about-maincircle {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 173, 183, 0.1)), to(rgba(200, 173, 183, 0.1))), url(../images/me.jpg);
+  background-image: linear-gradient(rgba(200, 173, 183, 0.1), rgba(200, 173, 183, 0.1)), url(../images/me.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#about .about-content .about-pic .about-pinkcircle {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  border: solid rgb(200, 173, 183) 2px;
+}
+
+#experience {
+  width: 100%;
+  height: 135vh;
+  padding-top: 100px;
+}
+#experience .experience-content {
+  width: 950px;
+  height: 900px;
+  margin: 0 auto;
+}
+#experience .experience-content h6 {
+  font-size: 30px;
+  color: white;
+  font-family: openR;
+}
+#experience .experience-content h6 span {
+  font-size: 20px;
+  color: rgb(200, 173, 183);
+}
+#experience .experience-content .job-container {
+  width: 100%;
+  min-height: 250px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#experience .experience-content .job-container .job-info {
+  width: 50%;
+  min-height: 250px;
+  padding-left: 10px;
+}
+#experience .experience-content .job-container .job-info h3 {
+  font-size: 24px;
+  color: rgb(200, 173, 183);
+  font-family: openR;
+  margin-bottom: 0;
+}
+#experience .experience-content .job-container .job-info h6 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: openL;
+}
+#experience .experience-content .job-container .job-info p {
+  font-size: 18px;
+  color: white;
+  font-family: openL;
+}
+#experience .experience-content .job-container .job-pic {
+  width: 50%;
+  height: 300px;
+  position: relative;
+}
+#experience .experience-content .job-container .job-pic .pinkcircle {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  border-radius: 150px;
+  width: 250px;
+  height: 250px;
+  border: solid rgb(200, 173, 183) 2px;
+}
+#experience .experience-content .job-container .job-pic .pinkcircle2 {
+  position: absolute;
+  top: 0px;
+  left: 180px;
+  border-radius: 150px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(200, 173, 183);
+}
+#experience .experience-content .job-container .job-pic img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 150px;
+  width: 250px;
+  height: 250px;
+}
+#experience .experience-content a {
+  text-decoration: none;
+}
+#experience .experience-content a .btn-resume {
+  margin-top: 35px;
+  width: 200px;
+  height: 60px;
+  border: solid white 2px;
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#experience .experience-content a .btn-resume h3 {
+  font-family: openL;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+#experience .experience-content a .btn-resume:hover {
+  border: solid rgb(200, 173, 183) 2px;
+  color: rgb(200, 173, 183);
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  height: 185vh;
+  padding-top: 100px;
+}
+#portfolio .portfolio-content {
+  width: 950px;
+  height: 180vh;
+  margin: 0 auto;
+}
+#portfolio .portfolio-content h6 {
+  font-size: 30px;
+  color: white;
+  font-family: openR;
+}
+#portfolio .portfolio-content h6 span {
+  font-size: 20px;
+  color: rgb(200, 173, 183);
+}
+#portfolio .portfolio-content h4 {
+  font-size: 20px;
+  color: rgb(200, 173, 183);
+  font-family: openL;
+}
+#portfolio .portfolio-content .projects-container {
+  width: 100%;
+  height: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#portfolio .portfolio-content .projects-container .project {
+  width: 280px;
+  height: 220px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: solid white 2px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#portfolio .portfolio-content .projects-container .project h1 {
+  color: white;
+  font-family: openB;
+  font-size: 20px;
+  text-align: center;
+}
+#portfolio .portfolio-content .projects-container .project h3 {
+  color: white;
+  font-family: openB;
+  font-size: 12px;
+  text-align: center;
+}
+#portfolio .portfolio-content .projects-container .project p {
+  color: white;
+  font-family: openL;
+  font-size: 12px;
+}
+#portfolio .portfolio-content .projects-container .project:hover {
+  cursor: pointer;
+  background-color: white;
+}
+#portfolio .portfolio-content .projects-container .project:hover h1, #portfolio .portfolio-content .projects-container .project:hover h3, #portfolio .portfolio-content .projects-container .project:hover p {
+  color: #4B4952;
+}
+#portfolio .portfolio-content .projects-container .project2 {
+  width: 280px;
+  height: 220px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#portfolio .portfolio-content .projects-container .p1, #portfolio .portfolio-content .projects-container .p2, #portfolio .portfolio-content .projects-container .p3, #portfolio .portfolio-content .projects-container .p4, #portfolio .portfolio-content .projects-container .p5, #portfolio .portfolio-content .projects-container .p6 {
+  width: 280px;
+  height: 220px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: solid white 2px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#portfolio .portfolio-content .projects-container .p1 h1, #portfolio .portfolio-content .projects-container .p2 h1, #portfolio .portfolio-content .projects-container .p3 h1, #portfolio .portfolio-content .projects-container .p4 h1, #portfolio .portfolio-content .projects-container .p5 h1, #portfolio .portfolio-content .projects-container .p6 h1 {
+  color: white;
+  font-family: openB;
+  font-size: 20px;
+  text-align: center;
+}
+#portfolio .portfolio-content .projects-container .p1 h3, #portfolio .portfolio-content .projects-container .p2 h3, #portfolio .portfolio-content .projects-container .p3 h3, #portfolio .portfolio-content .projects-container .p4 h3, #portfolio .portfolio-content .projects-container .p5 h3, #portfolio .portfolio-content .projects-container .p6 h3 {
+  color: white;
+  font-family: openB;
+  font-size: 12px;
+  text-align: center;
+}
+#portfolio .portfolio-content .projects-container .p1 p, #portfolio .portfolio-content .projects-container .p2 p, #portfolio .portfolio-content .projects-container .p3 p, #portfolio .portfolio-content .projects-container .p4 p, #portfolio .portfolio-content .projects-container .p5 p, #portfolio .portfolio-content .projects-container .p6 p {
+  color: white;
+  font-family: openL;
+  font-size: 12px;
+}
+#portfolio .portfolio-content .projects-container .p1:hover {
+  background-image: url(../images/BRAIN_INFOGRAPHIC.png);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 400px;
+  width: 330px;
+}
+#portfolio .portfolio-content .projects-container .p1:hover h1, #portfolio .portfolio-content .projects-container .p1:hover h3, #portfolio .portfolio-content .projects-container .p1:hover p {
+  display: none;
+}
+#portfolio .portfolio-content .projects-container .p2:hover {
+  background-image: url(../images/principlesOfDesignfinal.png);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 480px;
+  width: 280px;
+}
+#portfolio .portfolio-content .projects-container .p2:hover h1, #portfolio .portfolio-content .projects-container .p2:hover h3, #portfolio .portfolio-content .projects-container .p2:hover p {
+  display: none;
+}
+#portfolio .portfolio-content .projects-container .p3:hover {
+  background-image: url(../images/infographic_draft2.png);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 400px;
+  width: 330px;
+}
+#portfolio .portfolio-content .projects-container .p3:hover h1, #portfolio .portfolio-content .projects-container .p3:hover h3, #portfolio .portfolio-content .projects-container .p3:hover p {
+  display: none;
+}
+#portfolio .portfolio-content .projects-container .p4:hover {
+  background-image: url(../images/dangab.jpg);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 400px;
+  width: 330px;
+}
+#portfolio .portfolio-content .projects-container .p4:hover h1, #portfolio .portfolio-content .projects-container .p4:hover h3, #portfolio .portfolio-content .projects-container .p4:hover p {
+  display: none;
+}
+#portfolio .portfolio-content .projects-container .p5:hover {
+  background-image: url(../images/characterproject_harrell.jpg);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 400px;
+  width: 330px;
+}
+#portfolio .portfolio-content .projects-container .p5:hover h1, #portfolio .portfolio-content .projects-container .p5:hover h3, #portfolio .portfolio-content .projects-container .p5:hover p {
+  display: none;
+}
+#portfolio .portfolio-content .projects-container .p6:hover {
+  background-image: url(../images/workseverytime_mharrell.jpg);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 400px;
+  width: 330px;
+}
+#portfolio .portfolio-content .projects-container .p6:hover h1, #portfolio .portfolio-content .projects-container .p6:hover h3, #portfolio .portfolio-content .projects-container .p6:hover p {
+  display: none;
+}
+
+#contact {
+  width: 100%;
+  min-height: 90vh;
+  padding-top: 80px;
+}
+#contact .contact-content {
+  width: 950px;
+  margin: 0 auto;
+}
+#contact .contact-content h6 {
+  font-size: 30px;
+  color: white;
+  font-family: openR;
+}
+#contact .contact-content h6 span {
+  font-size: 20px;
+  color: rgb(200, 173, 183);
+}
+#contact .contact-content h1 {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-family: openB;
+  font-size: 48px;
+}
+#contact .contact-content p {
+  width: 400px;
+  margin: 0 auto;
+  font-family: openL;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+#contact .contact-content a {
+  text-decoration: none;
+  margin: 0 auto;
+}
+#contact .contact-content a .btn-email {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 200px;
+  height: 60px;
+  border: solid white 2px;
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#contact .contact-content a .btn-email h3 {
+  font-family: openL;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+#contact .contact-content a .btn-email:hover {
+  border: solid rgb(200, 173, 183) 2px;
+  color: rgb(200, 173, 183);
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+}
+footer p {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(200, 173, 183);
+  font-family: openL;
+  font-size: 12px;
+}

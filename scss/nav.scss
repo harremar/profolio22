@@ -1,0 +1,47 @@
+nav {
+    width: 100%;
+    height: 60px;
+    // background-color: $site-greypurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    position: fixed;
+    z-index: 1;
+    .logo{
+        a{
+            color: white;
+            font-family: candara;
+            text-decoration: none;
+            transition: 0.3s; 
+            font-size: 34px;
+            img{
+                width: 58px;
+                height: 40px;
+            }
+        }
+    }
+    .links{
+        width: 440px;
+        // background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            color: white;
+            font-family: openL;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            span{
+                color: $site-darkpink;
+                font-size: 12px;
+            }
+        }
+        a:hover{
+            color:$site-darkpink;
+            cursor: pointer;
+        }
+    }
+
+}

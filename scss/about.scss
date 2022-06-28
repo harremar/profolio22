@@ -1,0 +1,66 @@
+#about{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    // background-color: pink;
+    
+    .about-content{
+        width: 950px;
+    height: 500px;
+    margin: 0 auto;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+        .about-info{
+            width: 50%;
+            height: 500px;
+            padding-left: 10px;
+            // background-color: bisque;
+            h6{
+                font-size: 30px;
+                color: white;
+                font-family: openR;
+                span{
+                    font-size: 20px;
+                    color: $site-darkpink;
+                }
+            }
+            p{
+                font-size: 18px;
+                color: white;
+                font-family: openL;
+            }
+        }
+        .about-pic{
+            width: 50%;
+            height: 500px;
+            // background-color: aqua;
+            position: relative;
+            .about-maincircle{
+                position: absolute;
+                top: 50px;
+                left: 90px;
+                width: 350px;
+                height: 350px;
+                border-radius: 200px;
+                background-image: linear-gradient(
+                    rgba($site-darkpink, 0.1),
+                    rgba($site-darkpink, 0.1)
+                  ), url(../images/me.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .about-pinkcircle{
+                position: absolute;
+                bottom: 70px;
+                right: 0;
+                width: 350px;
+                height: 350px;
+                border-radius: 200px;
+                border: solid $site-darkpink 2px;
+            }
+        }
+    }
+}

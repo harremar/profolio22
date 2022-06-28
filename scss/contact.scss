@@ -1,0 +1,61 @@
+
+#contact{
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 80px;
+    // background-color: red;
+    .contact-content{
+        width: 950px;
+        margin: 0 auto;
+        h6{
+            font-size: 30px;
+            color: white;
+            font-family: openR;
+            span{
+                font-size: 20px;
+                color: $site-darkpink;
+            }
+        }
+        h1{
+            margin-top: 100px;
+            text-align: center;
+            color: white;
+            font-family: openB;
+            font-size: 48px;
+        }
+        p{
+            width: 400px;
+            margin: 0 auto;
+            font-family: openL;
+            text-align: center;
+            color: rgba($color: #fff, $alpha: 0.5);
+            
+        }
+        a{
+            text-decoration: none;
+            margin: 0 auto;
+            .btn-email{
+                margin: 0 auto;
+                margin-top: 35px;
+                width: 200px;
+                height: 60px;
+                border: solid white 2px;
+                color: white;
+                border-radius: 5px;
+                transition: 0.3s;
+                
+                h3{
+                    font-family: openL;
+                    font-size: 16px;
+                    text-align: center;
+                    padding-top: 15px;
+                }
+            }
+            .btn-email:hover{
+                border: solid $site-darkpink 2px;
+                color: $site-darkpink;
+                cursor: pointer;
+            }
+        }
+    }
+}
